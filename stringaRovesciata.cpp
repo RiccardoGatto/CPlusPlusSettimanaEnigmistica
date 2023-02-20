@@ -11,6 +11,7 @@ string rovescia(string word)
     }
     return rov;
 }
+
 string rovescia2(string word)
 {
     int y = word.length() - 1;
@@ -50,5 +51,5 @@ int main()
     cout << "Inserisci una parola: ";
     cin >> parola;
     cout << "\nLa parola inserita, al contrario, e': " << rovescia2(parola);
-    //cout << "\nLa parola inserita, al contrario, e': " << rovesciaRic(parola, parola.length()-1);
+    // cout << "\nLa parola inserita, al contrario, e': " << rovesciaRic(parola, parola.length()-1);
 }

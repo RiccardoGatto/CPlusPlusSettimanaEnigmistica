@@ -2,22 +2,18 @@
 #include <string>
 using namespace std;
 
-bool palindroma(string word)
+string rovescia(string word)
 {
-    int i = 0;
-    int y = word.length() - 1;
-    bool cond = false;
-    while (i < y)
+    string rov = "";
+    for (int i = word.length() - 1; i >= 0; i--)
     {
-        if (word[i] == word[y])
-        {
-            cond = true;
-        }
-        i++;
-        y--;
+        rov += word[i];
     }
-    return cond;
+    return rov;
 }
+ bool palindroma(string word){
+    return (word==rovescia(word));
+ }
 
 int main()
 {
