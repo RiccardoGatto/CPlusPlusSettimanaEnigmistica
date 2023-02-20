@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int contaOccorrenze(string word, char c)
+int singoleOccorrenze(string word, char c)
 {
     int cont = 0;
     for (int i = 0; i < word.length(); i++)
@@ -14,17 +14,17 @@ int contaOccorrenze(string word, char c)
     return cont;
 }
 
-void occorrenze(string word)
+void contaOccorrenze(string word)
 {
     string appoggio = "";
     int i = 0;
     while (i < word.length())
     {
-        if (appoggio.find(word[i])==-1)
+        if (appoggio.find(word[i]) == -1)
         {
-            cout << word[i] << " e' contenuto " << contaOccorrenze(word, word[i]) << " volta/e\n";
-            appoggio= appoggio + word[i];
-            }
+            cout << word[i] << " e' contenuto " << singoleOccorrenze(word, word[i]) << " volta/e\n";
+            appoggio = appoggio + word[i];
+        }
         i++;
     }
 }
@@ -34,5 +34,5 @@ int main()
     string parola;
     cout << "Inserisci una parola: ";
     cin >> parola;
-    occorrenze(parola);
+    contaOccorrenze(parola);
 }

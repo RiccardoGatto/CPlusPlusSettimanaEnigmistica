@@ -24,11 +24,12 @@ string rovescia2(string word)
     }
     return word;
 }
+/*
 string rovesciaRic(string word, int i)
 {
     if (i == -1)
     {
-        return "";
+        return word;
     }
     else
     {
@@ -42,12 +43,12 @@ string rovesciaRic(string word, int i)
         }
     }
 }
-
+*/
 int main()
 {
     string parola;
     cout << "Inserisci una parola: ";
     cin >> parola;
-    // cout << "\nLa parola inserita, al contrario, e': " << rovescia2(parola);
-    cout << "\nLa parola inserita, al contrario, e': " << rovesciaRic(parola, parola.length()-1);
+    cout << "\nLa parola inserita, al contrario, e': " << rovescia2(parola);
+    //cout << "\nLa parola inserita, al contrario, e': " << rovesciaRic(parola, parola.length()-1);
 }
