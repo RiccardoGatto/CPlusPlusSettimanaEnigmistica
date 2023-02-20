@@ -13,7 +13,6 @@ int singoleOccorrenze(string word, char c)
     }
     return cont;
 }
-
 void contaOccorrenze(string word)
 {
     string appoggio = "";
@@ -28,7 +27,6 @@ void contaOccorrenze(string word)
         i++;
     }
 }
-
 int main()
 {
     string parola;
