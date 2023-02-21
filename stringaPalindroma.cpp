@@ -11,9 +11,11 @@ string rovescia(string word)
     }
     return rov;
 }
- bool palindroma(string word){
-    return (word==rovescia(word));
- }
+
+bool palindroma(string word)
+{
+    return (word == rovescia(word));
+}
 
 int main()
 {
